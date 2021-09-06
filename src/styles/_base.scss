@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  // colors
+  --color-primary: whitesmoke;
+  --color-secondary: green;
+  --bg-primary: #2e3034;
+  --bg-secondary: #3a3b3f;
+
+  // heights
+  --nav-height: 90px;
+
+  // fonts
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Vollkorn', serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--color-primary);
+}
