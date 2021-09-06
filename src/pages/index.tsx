@@ -1,11 +1,9 @@
-import HeroSection from '../components/pageComponents/Hero';
-import Navbar from '../components/pageComponents/Navbar';
+import HomePage from '../components/pageComponents/HomePage';
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <HeroSection />
+      <HomePage />
     </>
   );
 }

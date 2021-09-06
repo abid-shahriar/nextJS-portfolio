@@ -1,56 +1,58 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 import Typography from '../../Typography';
 
-export default function index() {
+import { NavBar, MenuContainer, ToggleBtn } from './styles';
+import { useGlobalState } from '../../../context';
+
+export default function Navbar() {
+  const { toggleMenu, setToggleMenu } = useGlobalState();
+
+  function handleToggle() {
+    setToggleMenu((prevSate: any) => !prevSate);
+  }
+
+  const { pathname } = useRouter();
+
+  useEffect(() => {
+    setToggleMenu(false);
+  }, [pathname, setToggleMenu]);
+
   return (
     <NavBar>
       <div>
-        <Link href='/'>
-          <a>
-            <Typography>logo</Typography>
-          </a>
-        </Link>
+        <div>
+          <Link href='/'>
+            <a>
+              <Typography>Abid Shahriar</Typography>
+            </a>
+          </Link>
+        </div>
+        <ToggleBtn onClick={handleToggle} active={toggleMenu} className='toggle-menu'>
+          <div></div>
+          <div></div>
+          <div></div>
+        </ToggleBtn>
+        <MenuContainer className={toggleMenu ? '' : 'inactive'}>
+          <Link href='/projects'>
+            <a>
+              <Typography>Projects</Typography>
+            </a>
+          </Link>
+          <Link href='/skills'>
+            <a>
+              <Typography>Skills</Typography>
+            </a>
+          </Link>
+          <Link href='/contact'>
+            <a>
+              <Typography>Contact</Typography>
+            </a>
+          </Link>
+        </MenuContainer>
       </div>
-      <MenuContainer>
-        <Link href='#projects'>
-          <a>
-            <Typography>Projects</Typography>
-          </a>
-        </Link>
-        <Link href='#skills'>
-          <a>
-            <Typography>Skills</Typography>
-          </a>
-        </Link>
-        <Link href='#contact'>
-          <a>
-            <Typography>Contact</Typography>
-          </a>
-        </Link>
-      </MenuContainer>
     </NavBar>
   );
 }
-
-const MenuContainer = styled.div`
-  display: flex;
-`;
-
-const NavBar = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: var(--nav-height);
-
-  a {
-    padding: 0 4rem;
-    color: var(--color-primary);
-    text-decoration: none;
-
-    & > * {
-      pointer-events: none;
-    }
-  }
-`;

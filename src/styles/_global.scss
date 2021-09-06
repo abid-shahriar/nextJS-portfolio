@@ -1,4 +1,20 @@
 #__next {
   max-width: 1200px;
   margin: 0 auto;
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--bg-secondary);
+}
+*::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: whitesmoke;
+  border-radius: 50px;
 }
