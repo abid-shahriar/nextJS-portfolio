@@ -56,12 +56,3 @@ export const StyledContainer = styled(Container)`
 export const StyledDesc = styled(Typography)`
   max-width: 80ch;
 `;
-
-export const StyledImage = styled.img`
-  position: absolute;
-  right: 0;
-  z-index: -4;
-  max-width: 500px;
-  height: 100%;
-  object-fit: cover;
-`;

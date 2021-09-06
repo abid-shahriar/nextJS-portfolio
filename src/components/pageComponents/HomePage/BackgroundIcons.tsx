@@ -17,6 +17,7 @@ const BackgroundIconsContainer = styled.div`
   top: 50%;
   right: -2rem;
   transform: translateY(-50%);
+  pointer-events: none;
 
   @media (max-width: 678px) {
     height: 400px;
