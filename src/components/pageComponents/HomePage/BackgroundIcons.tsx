@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { BsCodeSlash } from 'react-icons/bs';
-import { AiOutlineHtml5 } from 'react-icons/ai';
 
 export default function BackgroundIcons() {
   return (

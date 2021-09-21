@@ -7,12 +7,12 @@ import { BtnsContainer } from './styles';
 export default function HomeButtons() {
   return (
     <BtnsContainer>
-      <Link href='/'>
+      <Link href='/abid_shahriar_resume.pdf'>
         <a>
           <Typography>Download Resume</Typography>
         </a>
       </Link>
-      <Link href='/'>
+      <Link href='/contact'>
         <a>
           <Typography>Message Me</Typography>
         </a>
