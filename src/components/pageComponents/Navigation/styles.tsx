@@ -38,6 +38,6 @@ export const Container = styled.div`
 
   & > * {
     pointer-events: none;
-    transform: translateY(-100%);
+    transform: translateY(-300%);
   }
 `;
