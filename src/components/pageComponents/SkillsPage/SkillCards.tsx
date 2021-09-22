@@ -8,7 +8,7 @@ export default function SkillCards() {
   return (
     <>
       <Typography fontSize='2rem' margin='4rem 0 1rem 0'>
-        Here are some of the technologies I am familiar with:
+        Here are some of the technologies I have worked with:
       </Typography>
 
       <SkillCardsWrapper>
