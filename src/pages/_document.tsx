@@ -49,6 +49,7 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script src='/swiped.js' async></script>
         </body>
       </Html>
     );
