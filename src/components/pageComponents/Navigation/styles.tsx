@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   position: fixed;
-  top: calc(50% + var(--nav-height));
-  transform: translateY(-50%);
+  top: var(--nav-height);
+  /* transform: translateY(-50%); */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -34,5 +34,10 @@ export const Container = styled.div`
 
     @media (min-width: 678px) {
     display: none;
+  }
+
+  & > * {
+    pointer-events: none;
+    transform: translateY(-100%);
   }
 `;
