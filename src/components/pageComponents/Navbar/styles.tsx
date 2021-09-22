@@ -13,7 +13,7 @@ export const MenuContainer = styled.div`
     right: 0;
     padding-left: 5%;
     z-index: -1;
-    transition: 0.5s;
+    transition: 0.25s;
     height: 175px;
     overflow: hidden;
     margin-top: calc(var(--nav-height));
@@ -96,7 +96,7 @@ export const ToggleBtn = styled.div`
     background-color: whitesmoke;
     pointer-events: none;
     border-radius: 50px;
-    transition: 0.5s;
+    transition: 0.25s;
 
     &:not(:last-child) {
       margin-bottom: 8px;
