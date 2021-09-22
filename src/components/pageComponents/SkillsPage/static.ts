@@ -8,7 +8,7 @@ export const skillsData = [
     skills: ['NodeJS', 'Express', 'Mongoose', 'MongoDB', 'JWT', 'CORS', 'Cookies', 'Rest-API']
   },
   {
-    title: 'other',
+    title: 'others',
     skills: ['Jira', 'Jenkins', 'git/github', 'React-hooks', 'React-PDF', 'Bootstrap', 'ContextAPI', 'Styled-components']
   }
 ];
